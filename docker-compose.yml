@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    environment:
+      - MONGO_URL=mongodb://db
+      - TOKEN=abc123
+    links:
+      - db
+    ports:
+      - "127.0.0.1:8000:8000"
+  db:
+    image: mongo

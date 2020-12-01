@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.4.10"
+    kotlin("jvm") version "1.4.20"
     application
     id("com.github.johnrengelman.shadow") version "6.1.0"
 }
@@ -13,8 +13,8 @@ application {
 }
 
 dependencies {
-    implementation("io.ktor:ktor-server-netty:1.4.2")
-    implementation("io.ktor:ktor-jackson:1.4.2")
-    implementation("io.ktor:ktor-auth:1.4.2")
+    implementation("io.ktor:ktor-server-netty:1.4.3")
+    implementation("io.ktor:ktor-jackson:1.4.3")
+    implementation("io.ktor:ktor-auth:1.4.3")
     implementation("org.mongodb:mongodb-driver-sync:4.1.1")
 }
